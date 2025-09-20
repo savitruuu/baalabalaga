@@ -31,10 +31,35 @@ body{
 .nav-links a:hover, .nav-links a:focus{background:rgba(0,0,0,0.04)}
 
 /* hero */
-.hero{padding:5rem 0;background:linear-gradient(180deg,#fff,#f3f6fb)}
-.hero h1{font-size:clamp(1.5rem,3vw,2.25rem);margin:0 0 .5rem}
-.hero p{margin:0 0 1rem;color:rgba(15,23,42,.8)}
-.btn{display:inline-block;padding:.6rem 1rem;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+.hero {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, #fff, #f3f6fb);
+  display: flex;             /* make it a flex container */
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  text-align: center;        /* center text inside */
+  min-height: 100vh;         /* full viewport height */
+  flex-direction: column;    /* stack h1, p, and btn vertically */
+}
+
+.hero h1 {
+  font-size: clamp(6rem, 3vw, 2.25rem);
+  margin: 0 0 0.5rem;
+}
+
+.hero p {
+  margin: 0 0 1rem;
+  color: rgba(15, 23, 42, 0.8);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+}
 
 /* features grid */
 .features{padding:3rem 0}
